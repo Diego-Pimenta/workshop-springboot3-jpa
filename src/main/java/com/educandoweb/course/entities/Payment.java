@@ -26,6 +26,7 @@ public class Payment implements Serializable {
 
 	@JsonIgnore
 	@OneToOne
+	// allows you use the same PK between two different entities/tables
 	@MapsId
 	private Order order;
 
